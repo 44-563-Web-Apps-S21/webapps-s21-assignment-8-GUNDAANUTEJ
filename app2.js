@@ -20,6 +20,7 @@ const server =
       res.write('</table')
       res.end('</body></html>')
       //Close the response
+      
     }                           
 )
 
