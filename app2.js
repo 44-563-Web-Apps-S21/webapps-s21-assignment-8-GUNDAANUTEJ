@@ -11,9 +11,13 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table')
+      res.write(' <tr> <th> Location </th> <th> Estimated Amount </th><th> Number of Hours Visitor should spent </th>  </tr>')
+      res.write('<tr> <td> Chikmagalur <td><td> 6 </td>  <td> 10000rps </td>   </tr>')    
+      res.write(' <tr><td> Coorg <td><td> 8 </td>  <td> 12000rps </td>   </tr>')
+      res.write(' <tr><td> Niagara falls <td> <td> 4 </td>   <td> 10000r$ </td>   </tr>')
+      res.write(' <tr><td> Nandi hills <td> <td> 3 </td>   <td> 5000rps </td>   </tr>')
+      res.write('</table')
       res.end('</body></html>')
       //Close the response
     }                           
